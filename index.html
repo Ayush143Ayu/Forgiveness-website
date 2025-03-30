@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgiveness</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Section -->
+        <section id="welcome">
+            <h1>I'm Sorry...</h1>
+            <p>From the bottom of my heart, I want to make things right.</p>
+            <button onclick="scrollToSection('memories')">See Our Memories</button>
+        </section>
+
+        <!-- Memories Section -->
+        <section id="memories">
+            <h2>Our Beautiful Moments</h2>
+            <div class="memory-gallery">
+                <div class="memory" onclick="showHeart(this)">❤️ Memory 1</div>
+                <div class="memory" onclick="showHeart(this)">❤️ Memory 2</div>
+                <div class="memory" onclick="showHeart(this)">❤️ Memory 3</div>
+            </div>
+            <button onclick="scrollToSection('apology')">Read My Apology</button>
+        </section>
+
+        <!-- Apology Section -->
+        <section id="apology">
+            <h2>My Apology</h2>
+            <p id="typed-text"></p>
+            <button onclick="scrollToSection('why-you-matter')">Why You Matter</button>
+        </section>
+
+        <!-- Why You Matter Section -->
+        <section id="why-you-matter">
+            <h2>Why You Are Special</h2>
+            <ul>
+                <li onclick="showMessage(this)">Your kindness ❤️</li>
+                <li onclick="showMessage(this)">Your smile 😊</li>
+                <li onclick="showMessage(this)">Your love 💕</li>
+            </ul>
+            <button onclick="scrollToSection('final-message')">Final Message</button>
+        </section>
+
+        <!-- Final Message Section -->
+        <section id="final-message">
+            <h2>Will You Forgive Me?</h2>
+            <p>No matter what, you mean the world to me.</p>
+            <button onclick="sendMessage()">Send Me a Message</button>
+        </section>
+    </div>
+</body>
+  </html>
